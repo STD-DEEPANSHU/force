@@ -1,0 +1,38 @@
+{
+  "name": "multi-channel-force-sub-bot",
+  "description": "Telegram bot that forces users to join multiple channels before chatting.",
+  "repository": "https://github.com/STD-DEEPANSHU/force",  // 👈 isse apne GitHub repo se replace kar dena
+  "keywords": ["telegram", "bot", "force-subscribe", "pyrogram"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "required": true
+    },
+    "FORCE_CHANNELS": {
+      "description": "Space-separated channel usernames, e.g. @chan1 @chan2",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo Bot is ready!"
+  }
+}
