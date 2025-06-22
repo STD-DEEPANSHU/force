@@ -1,23 +1,23 @@
 {
-  "name": "multi-channel-force-sub-bot",
-  "description": "Telegram bot that forces users to join multiple channels before chatting.",
+  "name": "multi-bot-force-start",
+  "description": "Force users to start multiple bots before getting access.",
   "repository": "https://github.com/STD-DEEPANSHU/force",
-  "keywords": ["telegram", "bot", "force-subscribe", "pyrogram"],
+  "keywords": ["telegram", "bot", "pyrogram"],
   "env": {
     "API_ID": {
-      "description": "Telegram API ID from https://my.telegram.org",
+      "description": "Telegram API ID from my.telegram.org",
       "required": true
     },
     "API_HASH": {
-      "description": "Telegram API Hash from https://my.telegram.org",
+      "description": "Telegram API Hash from my.telegram.org",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Bot token from @BotFather",
+      "description": "Your main bot token",
       "required": true
     },
-    "FORCE_CHANNELS": {
-      "description": "Space-separated channel usernames, e.g. @chan1 @chan2",
+    "REQUIRED_BOTS": {
+      "description": "Space-separated list of bot usernames, e.g. @bot1 @bot2",
       "required": true
     }
   },
@@ -33,6 +33,6 @@
     }
   },
   "scripts": {
-    "postdeploy": "echo Bot is ready!"
+    "postdeploy": "echo App deployed"
   }
 }
