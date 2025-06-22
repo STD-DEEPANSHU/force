@@ -1,7 +1,7 @@
 {
   "name": "multi-channel-force-sub-bot",
   "description": "Telegram bot that forces users to join multiple channels before chatting.",
-  "repository": "https://github.com/STD-DEEPANSHU/force",  // 👈 isse apne GitHub repo se replace kar dena
+  "repository": "https://github.com/STD-DEEPANSHU/force",
   "keywords": ["telegram", "bot", "force-subscribe", "pyrogram"],
   "env": {
     "API_ID": {
